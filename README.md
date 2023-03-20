@@ -25,7 +25,8 @@ There are a few files in utils:
 - The `MerkleTree.js` should look familiar from the Merkle Tree module! This one has been modified so you should not have to deal with any crypto type conversion. You can import this in your client/server
 - The `verifyProof.js` should also look familiar. This was the last stage in the module. You can use this function to prove a name is in the merkle root, as show in the example.
 
-##Solution
+## Solution
+
 Input from command line the Name.
 Client creates the Merkle Tree, Root, Proof (using the function from utils) and passes these as arguments with Name in a post request to the server (Express).
 Server verifies the existence of the Name in the List with the reconstruction of the Merkle Root using Merkle Path and Leaf/Node Name and comparing it with the passed root from the client. 
